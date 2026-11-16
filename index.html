@@ -3,52 +3,76 @@
 <html lang="bg">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FORD MK3</title>
 <style>
-body {
-  margin: 0;
-  background: #11151c;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#090d14;
+ color:white;
+ font-family:Arial,sans-serif;
 }
-header {
-  padding: 35px;
-  background: #080b10;
+header{
+ padding:25px 8%;
+ display:flex;
+ justify-content:space-between;
+ background:#080b10;
+ border-bottom:1px solid #26364a;
 }
-h1 {
-  font-size: 65px;
-  color: #58a6ff;
+.logo{font-weight:bold;letter-spacing:4px;color:#69b7ff}
+nav a{color:white;text-decoration:none;margin-left:20px}
+.hero{
+ text-align:center;
+ padding:90px 15px 55px;
+ background:linear-gradient(135deg,#101c2d,#080b10);
 }
-p {
-  font-size: 20px;
-  color: #ddd;
+.hero small{letter-spacing:7px;color:#69b7ff}
+h1{font-size:clamp(55px,10vw,100px);margin:20px 0}
+h1 span{color:#55aaff}
+.hero p{color:#c3cedc;font-size:19px}
+button{
+ background:#1689ed;color:white;border:0;
+ padding:14px 28px;border-radius:7px;
+ font-size:16px;margin-top:20px;
 }
-main {
-  padding: 35px 15px;
+section{padding:55px 8%;text-align:center}
+h2{font-size:32px}
+.line{width:65px;height:3px;background:#1689ed;margin:15px auto 30px}
+.photo{
+ width:100%;max-width:950px;
+ border-radius:14px;
+ border:2px solid #253e5a;
+ box-shadow:0 10px 45px #1689ed33;
 }
-img {
-  width: 90%;
-  max-width: 850px;
-  border-radius: 15px;
-}
-footer {
-  padding: 25px;
-  color: #888;
+.info{color:#bdc8d6;line-height:1.8;font-size:17px}
+footer{
+ text-align:center;padding:30px;
+ background:#080b10;color:#71849b;
 }
 </style>
 </head>
 <body>
 <header>
-  <h1>FORD MK3</h1>
-  <p>WELCOME TO MY GARAGE</p>
+ <div class="logo">FORD MK3</div>
+ <nav><a href="#home">Начало</a><a href="#about">За колата</a></nav>
 </header>
-<main>
-  <h2>Моят Ford MK3 🚗</h2>
-  <p>Добре дошли в моя личен автомобилен сайт!</p>
-  <p>FORD MK3 – DRIVE THE LEGEND</p>
-</main>
-<footer>© FORD MK3</footer>
+<div class="hero" id="home">
+ <small>WELCOME TO MY GARAGE</small>
+ <h1>FORD <span>MK3</span></h1>
+ <p>DRIVE THE LEGEND.</p>
+</div>
+<section id="about">
+ <h2>Моят Ford MK3</h2>
+ <div class="line"></div>
+ <p class="info">Добре дошли в моя автомобилен свят.<br>
+ Ford MK3 – стил, история и страст към автомобилите.</p>
+</section>
+<section>
+ <h2>Галерия</h2>
+ <div class="line"></div>
+ <img class="photo" src="ford-mk3.jpeg" alt="Ford MK3">
+</section>
+<footer>FORD MK3 · DRIVE THE LEGEND</footer>
 </body>
 </html>
